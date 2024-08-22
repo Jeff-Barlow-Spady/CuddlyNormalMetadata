@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Trees</h1>
+<ul>
+    {% for tree in trees %}
+    <li>{{ tree.species }} - {{ tree.growth_stage }} | <a href="/edit-tree/{{ tree.id }}">Edit</a> | <a href="/delete-tree/{{ tree.id }}">Delete</a></li>
+    {% endfor %}
+</ul>
+<a href="/add-tree">Add New Tree</a>
+{% endblock %}

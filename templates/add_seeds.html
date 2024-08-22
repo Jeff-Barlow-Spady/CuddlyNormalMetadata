@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add Seed Source</h1>
+<form action="/add-seed" method="post">
+    <label for="succession_number">Succession Number:</label><br>
+    <input type="text" id="succession_number" name="succession_number" placeholder="Succession Number"><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" placeholder="Description"></textarea><br><br>
+
+    <label for="germination_rate">Germination Rate:</label><br>
+    <input type="number" id="germination_rate" name="germination_rate" placeholder="Germination Rate"><br><br>
+
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="quantity" placeholder="Quantity"><br><br>
+
+    <label for="scarification_instructions">Scarification Instructions:</label><br>
+    <textarea id="scarification_instructions" name="scarification_instructions" placeholder="Scarification Instructions"></textarea><br><br>
+
+    <label for="stratification_instructions">Stratification Instructions:</label><br>
+    <textarea id="stratification_instructions" name="stratification_instructions" placeholder="Stratification Instructions"></textarea><br><br>
+
+    <label for="geographic_location">Geographic Location:</label><br>
+    <input type="text" id="geographic_location" name="geographic_location" placeholder="Geographic Location"><br><br>
+
+    <label for="supplier">Supplier:</label><br>
+    <input type="text" id="supplier" name="supplier" placeholder="Supplier"><br><br>
+
+    <label for="viability_duration">Viability Duration:</label><br>
+    <input type="text" id="viability_duration" name="viability_duration" placeholder="Viability Duration"><br><br>
+    <button type="submit">Submit</button>
+    </form>
+    {% endblock %}
+

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Seed Sources</h1>
+<ul>
+    {% for seed in seeds %}
+    <li>{{ seed.succession_number }} - {{ seed.description }} | <a href="/edit-seed/{{ seed.id }}">Edit</a> | <a href="/delete-seed/{{ seed.id }}">Delete</a></li>
+    {% endfor %}
+</ul>
+<a href="/add-seed">Add New Seed Source</a>
+{% endblock %}

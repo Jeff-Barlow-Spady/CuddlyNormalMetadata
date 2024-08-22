@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add Sub Succession</h1>
+<form action="/add-subsuccession" method="post">
+    <label for="sub_succession_number">Sub Succession Number:</label><br>
+    <input type="text" id="sub_succession_number" name="sub_succession_number" placeholder="Sub Succession Number"><br><br>
+        <label for="seed_source_id">Seed Source ID:</label><br>
+        <input type="number" id="seed_source_id" name="seed_source_id" placeholder="Seed Source ID"><br><br>
+
+        <label for="grower_id">Grower ID:</label><br>
+        <input type="number" id="grower_id" name="grower_id" placeholder="Grower ID"><br><br>
+
+        <label for="status">Status:</label><br>
+        <input type="text" id="status" name="status" placeholder="Status"><br><br>
+
+        <label for="expected_outcome">Expected Outcome:</label><br>
+        <textarea id="expected_outcome" name="expected_outcome" placeholder="Expected Outcome"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+</form>
+{% endblock %}

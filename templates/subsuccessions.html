@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Sub Successions</h1>
+<ul>
+    {% for subsuccession in subsuccessions %}
+    <li>{{ subsuccession.sub_succession_number }} - {{ subsuccession.status }} | <a href="/edit-subsuccession/{{ subsuccession.id }}">Edit</a> | <a href="/delete-subsuccession/{{ subsuccession.id }}">Delete</a></li>
+    {% endfor %}
+</ul>
+<a href="/add-subsuccession">Add New Sub Succession</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Growers</h1>
+<ul>
+    {% for grower in growers %}
+    <li>{{ grower.name }} - {{ grower.contact_info }} | <a href="/edit-grower/{{ grower.id }}">Edit</a> | <a href="/delete-grower/{{ grower.id }}">Delete</a></li>
+    {% endfor %}
+</ul>
+<a href="/add-grower">Add New Grower</a>
+{% endblock %}

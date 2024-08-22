@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cuddlynormalmetadata"
+version = "0.1.0"
+description = "FastHTML test"
+authors = ["Jeff-Barlow-Spady <135166969+Jeff-Barlow-Spady@users.noreply.github.com>"]
+license = "BSD"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+0html = "^0.0.0"
+SQLAlchemy = "^2.0.32"
+python-fasthtml = "^0.4.4"
+uv = "^0.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

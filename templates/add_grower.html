@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add Grower</h1>
+<form action="/add-grower" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+
+    <label for="contact_info">Contact Info:</label><br>
+    <input type="text" id="contact_info" name="contact_info" placeholder="Contact Info"><br><br>
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" placeholder="Address"><br><br>
+
+    <label for="latitude">Latitude:</label><br>
+    <input type="number" id="latitude" name="latitude" placeholder="Latitude"><br><br>
+
+    <label for="longitude">Longitude:</label><br>
+    <input type="number" id="longitude" name="longitude" placeholder="Longitude"><br><br>
+
+    <label for="group_membership">Group Membership:</label><br>
+    <input type="text" id="group_membership" name="group_membership" placeholder="Group Membership"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
